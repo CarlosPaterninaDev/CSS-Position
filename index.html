@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="shortcut icon" href="/assets/img/icon.svg" type="image/x-icon" />
+    <title>CSS POSITIONS</title>
+  </head>
+  <body>
+    <h1>CSS Positions</h1>
+
+    <main>
+      <h2>
+        La propiedad position de CSS especifica cómo un elemento es posicionado
+        en el documento. Las propiedades top, right, bottom, y left determinan
+        la ubicación final de los elementos posicionados.
+      </h2>
+
+      <hr />
+
+      <p>Propiedades disponibles:</p>
+
+      <ol>
+        <li><a href="#static">Static</a></li>
+        <li><a href="#relative">Relative</a></li>
+        <li><a href="#absolute">Absolute</a></li>
+        <li><a href="#fixed">Fixed</a></li>
+        <li><a href="#sticky">Sticky</a></li>
+      </ol>
+    </main>
+
+    <div class="container">
+      <p id="static">
+        <strong>Static:</strong> Es la propiedad por defecto. Establecer una
+        posición diferente a esta permite la utilización de otras propiedades
+        tales como: top, bottom, left, right y z-index.
+      </p>
+
+      <section class="static">
+        <p class="position">CSS <span>STATIC</span> POSITION</p>
+      </section>
+      <hr />
+
+      <p id="relative">
+        <strong>Relative:</strong> El objeto se mueve en base al lugar donde se
+        encuentra originalmente.
+      </p>
+
+      <section class="relative">
+        <p class="position">CSS <span>RELATIVE</span> POSITION</p>
+      </section>
+      <hr />
+
+      <p id="absolute">
+        <strong>Absolute:</strong> El objeto se ubica de manera absoluta con el
+        elemento más cercano que tenga posición relativa o con el body.
+      </p>
+
+      <section class="absolute">
+        <p class="position">CSS <span>ABSOLUTE</span> POSITION</p>
+      </section>
+      <hr />
+
+      <p id="fixed">
+        <strong>Fixed:</strong> El elemento se muestra de manera fija en el
+        viewport.
+      </p>
+
+      <section class="fixed z">
+        <p class="position">CSS <span>FIXED z-index: -1 </span> POSITION</p>
+      </section>
+      <hr />
+
+      <p id="sticky">
+        <strong>Sticky:</strong> El elemento se queda de manera fija una vez que
+        aparece en pantalla.
+      </p>
+    </div>
+
+    <div class="sticky">
+      <p class="position">CSS <span>STICKY</span> POSITION</p>
+    </div>
+    <hr />
+
+    <footer>Hi!</footer>
+  </body>
+</html>

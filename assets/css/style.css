@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto;
+  min-height: 90vh;
+  width: 90%;
+  position: relative;
+  color: #333;
+  height: 4000px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  min-height: 40vh;
+}
+
+ol li {
+  font-weight: bold;
+  list-style: none;
+  margin: 10px;
+}
+
+li a {
+  color: #333;
+  text-decoration: none;
+}
+
+p {
+  margin: 15px;
+  padding: 15px;
+  font-size: 1.5em;
+  background: rgba(255, 206, 206, 0.2);
+}
+
+strong {
+  font-size: 1.5em;
+}
+
+h1 {
+  padding: 40px;
+  margin: 20px 0;
+  font-size: 3em;
+}
+
+h2 {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+section {
+  background: white;
+  border: 1px solid red;
+  height: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5px;
+}
+
+.position {
+  background: rgb(255, 206, 206);
+  display: inline-block;
+  font-size: 3em;
+  /* position: relative; */
+}
+
+.static p span {
+  background: white;
+  border: 3px dotted black;
+  bottom: -40px;
+  color: deeppink;
+  position: static;
+  z-index: 0;
+}
+
+/* Posicion relative mantiene su posición */
+.relative p span {
+  background: white;
+  bottom: -50px;
+  border: 3px dotted black;
+  color: deeppink;
+  position: relative;
+}
+
+/* Posicion absolute pierde su posicion y es relativa al elemento superior con Position:Relative
+  Si no existe entonces toma la posicion del padre HTML
+*/
+.absolute p span {
+  background: white;
+  border: 3px dotted black;
+  color: deeppink;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  z-index: 0;
+}
+
+.fixed p span {
+  background: white;
+  border: 3px dotted black;
+  color: deeppink;
+  position: fixed;
+  right: 0px;
+  top: 76%;
+  z-index: -1;
+  filter: opacity(0.5);
+}
+
+.z {
+  z-index: -2;
+}
+
+.sticky {
+  background: rgba(255, 255, 255, 0.5);
+  color: deeppink;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0px;
+}
+
+footer {
+  font-size: 3em;
+  position: absolute;
+  bottom: 0;
+}
